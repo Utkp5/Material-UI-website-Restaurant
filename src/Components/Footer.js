@@ -13,14 +13,14 @@ import { NavLink } from 'react-router-dom';
 function Footer() {
   return (
     <>
-      <Box sx={{bgcolor: 'midnightblue', position:'relative', bottom: 0, color: 'white',display:'flex',
+      <Box sx={{bgcolor: 'midnightblue',bottom: 0, color: 'white',display:'flex',
        p:4,width:'100%',justifyContent:'space-between',
-      '@media(max-width:600px)':{flexDirection:'column', alignItems:'center',position:'relative',bottom: 0 }}}>
+      '@media(max-width:600px)':{flexDirection:'column', alignItems:'center',bottom: 0 }}}>
 
           <Box sx={{'@media(max-width:600px)':{textAlign:'center',marginBottom: 2}}}>
             <img src={logo} alt="logo" style={{width:80}}/>
-            <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis <br />
-             magnam molestias adipisci, dignissimos delectus.</Typography>
+            <Typography>Food liked by everyone . Sweeter taster to make you sweeter.<br />
+             Be familier with the new taste times of fries.</Typography>
             <IconButton> 
                 <FacebookIcon sx={{color: 'white',marginRight: 2}}/>
                 <TwitterIcon sx={{color: 'white',marginRight: 2}}/>
@@ -32,7 +32,7 @@ function Footer() {
           <Box sx={{'@media(max-width:600px)':{textAlign:'center',marginBottom: 2}}}>
             <Typography>OVERVIEW</Typography>
                <Box>
-                    <Typography><NavLink className='footer_navlink' to={'/Home'}>Home</NavLink></Typography>
+                    <Typography><NavLink className='footer_navlink' to={'/'}>Home</NavLink></Typography>
                     <Typography><NavLink className='footer_navlink' to={'/About'}>About</NavLink></Typography> 
                     <Typography><NavLink className='footer_navlink' to={'/Contact'}>Contact</NavLink></Typography> 
                     <Typography><NavLink className='footer_navlink' to={'/Menu'}>Menu</NavLink></Typography> 

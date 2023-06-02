@@ -6,7 +6,7 @@ function Layout({children}) {
   return (
     <>
       <Navbar />
-      <div>{children}</div>
+      <div style={{minHeight: '60vh'}}>{children}</div>
       <Footer />
     </>
   )

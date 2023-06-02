@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+.h_banner
+{
+    background-image: url(../../Images/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 120vh;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+.h_b_content
+{
+ margin-left: 30px;
+ margin-top: -130px;
+}
+.hb_h2
+{
+    color: burlywood;
+    font-family: 'Great Vibes', cursive;
+    font-size: 59px;
+}
+.hb_h1
+{
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+.hb_h3
+{
+    margin-left: 8px;
+    margin: 2px 0;
+}
+.h_b_content button{
+    margin: 20px 0;
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px 40px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+  .h_banner{
+    width: 100vw;
+    height: 48vh;
+  }   
+  .h_b_content {
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  .hb_h2 {
+    font-size: 35px;
+   }
+   .hb_h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+   }
+   .h_b_content button {
+    padding: 10px 20px;
+    font-size: 10px;
+   }
+   .hb_h3 {
+    font-size: 12px;
+    margin-left: 6px;
+   }
+}
