@@ -12,3 +12,30 @@
     list-style: none;
     justify-content: space-between;
 }
+.mobile_nav_ul li {
+    margin: 20px 20px;
+}
+.mobile_nav_ul li a {
+    text-decoration: none;
+    font-size: larger;
+    /* color: aliceblue; */
+    color: midnightblue;
+
+
+}
+.mobile_nav_ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.css-15th2q6-MuiSvgIcon-root
+{
+    color: floralwhite;
+}
+
+.footer_navlink {
+    text-decoration: none;
+    color: white;
+}
