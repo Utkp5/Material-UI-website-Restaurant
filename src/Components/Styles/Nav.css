@@ -1,0 +1,14 @@
+.nav_ul li {
+    margin: 0 20px;
+}
+.nav_ul li a {
+    text-decoration: none;
+    font-size: larger;
+    color: aliceblue;
+
+}
+.nav_ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
