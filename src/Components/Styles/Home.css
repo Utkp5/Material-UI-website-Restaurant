@@ -17,13 +17,13 @@
  margin-left: 30px;
  margin-top: -130px;
 }
-.hb_h2
+.hb_h2, .hp_h2
 {
     color: burlywood;
     font-family: 'Great Vibes', cursive;
     font-size: 59px;
 }
-.hb_h1
+.hb_h1, .hp_h1
 {
     font-size: 65px;
     margin-bottom: 10px;
@@ -42,6 +42,39 @@
     border: none;
     cursor: pointer;
 }
+.h_img{
+  margin-left: 160px;
+ }
+ .img_h{
+    width: 340px;
+    margin: 0 10px;
+    border-radius: 6px;
+ }
+.hp_banner{
+  background-image: url(../../Images/hbg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+.hp_content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
+
 @media screen and (max-width:600px) {
   .h_banner{
     width: 100vw;
@@ -66,5 +99,18 @@
    .hb_h3 {
     font-size: 12px;
     margin-left: 6px;
+   }
+   .h_img{
+    width: 180px;
+    margin-left: 90px;
+   }
+   .img_h{
+    width: 160px;
+   }
+   .hp_h2{
+
+   }
+   .hp_h1{
+   
    }
 }
