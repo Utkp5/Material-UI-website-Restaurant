@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../Layout'
 import '../Styles/Home.css';
-import { Box, Button, Card, CardActionArea, CardContent, Typography } from '@mui/material';
+import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material';
 import h1 from '../../Images/h1.jpg'
 import h2 from '../../Images/h2.jpg'
+import data from '../Data';
 
 
 function Home() {
@@ -59,27 +60,23 @@ function Home() {
                 <h1 className='hp_h1'>EXPERIENCE</h1>
              </div>
          </div>
-         <Card sx={{ maxWidth: 345, marginTop: 10, marginLeft: 5 }}>
 
-      <CardActionArea>
-
-        <CardMedia component="img" height="200" alt="green iguana"
-          image="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-        />
-
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">Web Development & design</Typography>
-          <Typography variant="body2" color="text.secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quos?</Typography>
-        </CardContent>
-
-      </CardActionArea>
-      
-      <CardActions>
-        <Button size="small" color="primary">Share</Button>
-        <Button size="small" color="primary" onClick={() => setopen(true)}>Delete</Button>
-      </CardActions>
-      
-      </Card>
+          <Card sx={{ maxWidth: 345,marginLeft: 5 }}>
+            {
+              data.map((product) => {
+                return (
+                  <CardActionArea>      
+                     <CardMedia component="img" height="200" alt="product" image={product.img} />
+                     <CardContent>
+                       <Typography gutterBottom variant="h5" component="div">{product.d_name}</Typography>
+                       <Typography variant="body2" color="text.secondary">{product.d_subName}</Typography>
+                       <Typography variant="body2" color="text.secondary">{product.d_price}</Typography>
+                     </CardContent>
+                  </CardActionArea>
+                )
+              })
+            }            
+          </Card>
 
     </Layout>
   )
