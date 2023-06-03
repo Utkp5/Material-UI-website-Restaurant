@@ -9,49 +9,49 @@ import p8 from '../Images/p8.jpg'
 
 const data = [
     {
-        img :{p1},
+        img : p1,
         d_name:'Italian Source Mushroom',
         d_subName:'Mushroom / Garlic / Veggies',
         d_price:'Rs: 350',
     },
     {
-        img :{p2},
+        img : p2,
         d_name:'Fried Potatoes With Garlic',
         d_subName:'Potatoes / Olive Oil / Garlic',
         d_price:'RS: 799',
     },
     {
-        img :{p3},
+        img : p3,
         d_name:'Tuna Roast Source',
         d_subName:'Tuna / Potatoes / Rice',
         d_price:'RS: 799',
     },
     {
-        img :{p4},
+        img : p4,
         d_name:'Roast Pork (4 Sticks)',
         d_subName:'Pork / Veggies / Shoyu',
         d_price:'RS: 1799',
     },
     {
-        img :{p5},
+        img : p5,
         d_name:'Salted Fried Chicken',
         d_subName:'Chicken / Olive Oil / Salt',
         d_price:'RS: 1799',
     },
     {
-        img :{p6},
+        img : p6,
         d_name:'Crab With Curry Sources',
         d_subName:'Crab / Potatoes / Rice',
         d_price:'RS: 999',
     },
     {
-        img :{p7},
+        img : p7,
         d_name:'Imported Salmon Steak',
         d_subName:'Salmon / Veggies / Oil',
         d_price:'RS: 679',
     },
     {
-        img :{p8},
+        img : p8,
         d_name:'Baked Potato Pizza',
         d_subName:'Potato / Bread / Cheese',
         d_price:'RS: 809',

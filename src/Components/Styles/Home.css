@@ -55,7 +55,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 40vh;
+    height: 48vh;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+.hp_banner1{
+  background-image: url(../../Images/hbg3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 48vh;
     color: white;
     flex-direction: column;
     display: flex;
