@@ -61,20 +61,26 @@ function Home() {
         {/*our story*/}
 
 
+        
+          {/*banner1*/}
         <div className='hp_banner'>
              <div className='hp_content'>
                 <h2 className='hp_h2'>Delightful</h2>
                 <h1 className='hp_h1'>EXPERIENCE</h1>
              </div>
          </div>
+          {/*banner1*/}
 
+
+
+          {/*products*/}
          <Box sx={{display:'flex',flexWrap:'wrap',}}>
          {
            data.map((product) => {
              return (
                   <Card sx={{ maxWidth: 480}}>
                   <CardActionArea>      
-                     <CardMedia component="img" height="337.2" alt="product" image={product.img} />
+                     <CardMedia component="img" height="337.2" alt="product" image={product.img} sx={{'@media(max-width:600px)':{height:1}}}/>
                      <CardContent>
                        <Typography gutterBottom variant="h5" component="div" sx={{fontWeight:'bold'}}>{product.d_name}</Typography>
                        <Typography variant="body2" color="text.secondary">{product.d_subName}</Typography>
@@ -86,27 +92,36 @@ function Home() {
               })
             }            
           </Box>
+          {/*products*/}
 
+
+
+          {/*banner2*/}
           <div className='hp_banner1'>
              <div className='hp_content'>
                 <h2 className='hp_h2'>Amazing</h2>
                 <h1 className='hp_h1'>DELICIOUS</h1>
              </div>
          </div>
+         {/*banner2 */}
 
-          <Box sx={{ width: '80%', mt:10,ml:15,mb:10,display:'flex' }}>
-            <Box>
+
+
+
+          {/*check out*/}
+          <Box sx={{ width: '80%', mt:10,ml:15,mb:10,display:'flex','@media(max-width:600px)':{ml:3, flexDirection:'column'}}}>
+            <Box sx={{'@media(max-width:600px)':{ml:4,}}}>
             <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
-            <Grid item xs={6}>
+            <Grid item xs={8}>
                 <CardMedia component="img" height="207" width="310" alt="product" image={h5} sx={{borderRadius:1}}/>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={4}>
                 <CardMedia component="img" height="207" width="310" alt="product" image={h6} sx={{borderRadius:1}}/>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={4}>
                 <CardMedia component="img" height="207" width="310" alt="product" image={h7} sx={{borderRadius:1}}/>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={8}>
                 <CardMedia component="img" height="207" width="310" alt="product" image={h8} sx={{borderRadius:1}}/>
               </Grid>
             </Grid>
@@ -123,15 +138,16 @@ function Home() {
                 </CardContent>
                 <CardActionArea>
                 <Button size="small" sx={{textDecoration:"underline",mx:7.5,fontSize:20,color:"burlywood",
-                '@media(max-width:600px)':{mx:5.9}}}>Get Direction</Button>
+                '@media(max-width:600px)':{mx:5}}}>Get Direction</Button>
                 </CardActionArea>
                 </Card>
            </Box>
           </Box>
+          {/*check out*/}
 
 
 
-          {/*our story*/}
+          {/*visit our*/}
           <Box sx={{display:'flex',mx:12,alignItems:'center',mb:10,'@media(max-width:600px)':{display:'flex',flexDirection:'column'}}}>
             
             <Box sx={{'@media(max-width:600px)':{mt:4}}}> 
@@ -145,16 +161,16 @@ function Home() {
                   </CardContent>
                   <CardActionArea>
                   <Button size="small" sx={{textDecoration:"underline",mx:12.9,fontSize:20,color:"burlywood",
-                  '@media(max-width:600px)':{mx:5.9}}}>Get Location</Button>
+                  '@media(max-width:600px)':{mx:5.4}}}>Get Location</Button>
                   </CardActionArea>
                   </Card>
             </Box>
-            <Box sx={{'@media(max-width:600px)':{display:'flex' ,flexDirection:'row'}}}>
+            <Box sx={{'@media(max-width:600px)':{display:'flex' ,flexDirection:'row',mt:4}}}>
                <img src={h3} alt="img1" className='img_h'/>
                <img src={h4} alt="img2" className='img_h'/>
             </Box>
           </Box>
-     {/*our story*/}
+     {/*visit our*/}
 
 
     </Layout>

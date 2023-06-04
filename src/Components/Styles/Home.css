@@ -119,10 +119,14 @@
    .img_h{
     width: 160px;
    }
+   .hp_banner{
+    height: 40vh;
+    max-width: 767px;
+   }
    .hp_h2{
-
+    font-size: 50px;   
    }
    .hp_h1{
-   
+    font-size: 50px;   
    }
 }
