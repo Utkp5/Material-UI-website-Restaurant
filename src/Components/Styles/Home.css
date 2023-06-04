@@ -17,13 +17,13 @@
  margin-left: 30px;
  margin-top: -130px;
 }
-.hb_h2, .hp_h2
+.hb_h2, .hp_h2, .about_h2
 {
     color: burlywood;
     font-family: 'Great Vibes', cursive;
     font-size: 59px;
 }
-.hb_h1, .hp_h1
+.hb_h1, .hp_h1, .about_h1
 {
     font-size: 65px;
     margin-bottom: 10px;
@@ -74,7 +74,7 @@
     justify-content: center;
 
 }
-.hp_content
+.hp_content, .about_content
 {
   display: flex;
   flex-direction: column;
@@ -82,6 +82,42 @@
 
 }
 
+/* about */
+
+.about_banner
+{
+  background-image: url(../../Images/about.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.about_banner1
+{
+  background-image: url(../../Images/about1.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: black;
+  background-position: center center;
+  height: 50vh;
+  margin-bottom: 10px;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn_about_h1{
+
+}
 
 
 
@@ -123,10 +159,21 @@
     height: 40vh;
     max-width: 767px;
    }
+   .about_banner, .about_banner1{
+    height: 40vh;
+    max-width: 767px;
+   }
    .hp_h2{
     font-size: 50px;   
    }
    .hp_h1{
     font-size: 50px;   
+   }
+   .about_h1{
+    font-size: 40px;   
+   }
+   .about_h2
+   {
+   
    }
 }

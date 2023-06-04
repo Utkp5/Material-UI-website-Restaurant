@@ -1,16 +1,30 @@
-import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Dialog, DialogContent, DialogContentText,DialogActions, DialogTitle, Divider, Drawer, IconButton, TextField, Toolbar, Typography } from "@mui/material";
 import React, { useState } from "react";
 import "./Styles/Nav.css";
 import { NavLink } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 
+
 function Navbar() {
 
   const [mobileview,setmobileview] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleDrawer = () => {
       setmobileview(!mobileview);
   }
+
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+
+
 
   const drawer = (
     <Box onClick={handleDrawer} sx={{textAlign: 'center'}}>
@@ -31,6 +45,9 @@ function Navbar() {
          </li>
          <li>
             <NavLink to={"/Shop"} >Shop</NavLink>
+         </li>
+         <li>
+            <Button variant="outlined" onClick={handleClickOpen} sx={{color:"inherit",border:"1px solid white"}}>Reservation</Button>
          </li>
       </ul>
     </Box>
@@ -63,10 +80,13 @@ function Navbar() {
                   <li>
                      <NavLink to={"/Shop"} >Shop</NavLink>
                   </li>
+                  <li>
+                     <Button variant="outlined" onClick={handleClickOpen} sx={{color:"inherit",border:"1px solid white"}}>Reservation</Button>
+                  </li>
                </ul>
              </Box>
           </Toolbar>
-        </AppBar>
+          </AppBar>          
         <Box>
         <Drawer variant="temporary" open={mobileview} onClose={handleDrawer} sx={{display: { xs: "block", sm: "none" },"& .MuiDrawer-paper": {
             boxSizing: "border-box",
@@ -77,6 +97,20 @@ function Navbar() {
         {drawer}
       </Drawer>
         </Box>
+        <Dialog open={open} onClose={handleClose}>
+            <DialogTitle sx={{textAlign:"center",fontSize:28}}>Reservation</DialogTitle>
+              <DialogContent>
+                <DialogContentText sx={{textAlign:"center",fontSize:14}}>BOOK YOUR SEATS</DialogContentText>
+                <TextField autoFocus margin="dense" id="name" label="Enter Your Name" type="text"  variant="standard" sx={{mx:2}}/>
+                <TextField autoFocus margin="dense" id="name" label="Enter Your Email" type="email"  variant="standard" sx={{mx:2}}/>                
+                <TextField autoFocus margin="dense" id="name" label="Enter Your PhoneNo." type="number"  variant="standard" sx={{mx:2}}/>                
+                <TextField autoFocus margin="dense" id="name" label="Enter No. of Seats" type="text"  variant="standard" sx={{mx:2}}/>                
+              </DialogContent>
+            <DialogActions>
+              <Button onClick={handleClose}>Cancel</Button>
+              <Button onClick={handleClose}>Book</Button>
+            </DialogActions>
+          </Dialog>
       </Box>
     </div>
   );
