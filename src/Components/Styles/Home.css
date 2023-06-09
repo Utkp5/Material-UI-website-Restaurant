@@ -50,6 +50,12 @@
     margin: 0 10px;
     border-radius: 6px;
  }
+ .img_h:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+  /* overflow: hidden; */
+  cursor: pointer;
+ }
 .hp_banner{
   background-image: url(../../Images/hbg2.jpg);
     background-repeat: no-repeat;
