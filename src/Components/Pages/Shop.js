@@ -6,8 +6,16 @@ import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Typography }
 function Shop() {
   return (
     <Layout>
+
+    {/*banner2*/}
+      <div className="shop_banner1">
+      <div className="about_content">
+        <h2 className="about_h2">Order</h2>
+        <h1 className="about_h1">SHOP</h1>
+      </div>
+    </div>
+    {/*banner2 */}
     
-    <box style={{backgroundColor:'lightgrey',display:'flex',justifyContent:'center',alignItems:'center',height:'40vh',fontSize:60,fontWeight:'bold','@media(max-width:600px)':{fontSize:30,height:'20vh'}}}>SHOP</box>
 
       {/*products*/}
       <Box sx={{display:'flex',flexWrap:'wrap',justifyContent:'space-evenly',mt:10,ml:1,'@media(max-width:600px)':{mt:6,mr:1}}}>

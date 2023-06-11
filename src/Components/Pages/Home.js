@@ -10,13 +10,16 @@ import h5 from '../../Images/h5.jpg'
 import h6 from '../../Images/h6.jpg'
 import h7 from '../../Images/h7.jpg'
 import h8 from '../../Images/h8.jpg'
-
 import data from '../Data';
-
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import LocalLibraryOutlinedIcon from '@mui/icons-material/LocalLibraryOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Home() {
   return (
     <Layout>
+
          <div className='h_banner'>
              <div className='h_b_content'>
                 <h2 className='hb_h2'>Welcome to</h2>
@@ -26,6 +29,16 @@ function Home() {
                  <button>ORDER NOW</button>
              </div>
          </div>
+
+         {/*sidebar*/}
+         <Box sx={{position:'fixed',zIndex:2,right:0,top:350,width:40,minHeight:160,display:'flex',flexDirection:'column',justifyContent:'space-evenly',alignItems:'center',background:'whitesmoke'}}>
+            <SettingsOutlinedIcon />
+            <FavoriteBorderOutlinedIcon />
+            <LocalLibraryOutlinedIcon />
+            <ShoppingCartOutlinedIcon />            
+         </Box>
+         {/*sidebar*/}
+
 
          {/*signature*/}
          <Box sx={{display:'flex',flexDirection:'column',alignItems:'center',my: 4}}>
