@@ -55,7 +55,7 @@ function Contact() {
 
         </Box>  
 
-        <Box><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55972.653767712975!2d77.24073664883642!3d28.74073160769854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1686498191055!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></Box>  
+        <Box><iframe title="ok" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55972.653767712975!2d77.24073664883642!3d28.74073160769854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1686498191055!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></Box>  
 
       </Box>
 
